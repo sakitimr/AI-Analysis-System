@@ -1,0 +1,26 @@
+{
+  "project": "AI-Driven Competitive Analysis Agent System",
+  "ide": "TRAE",
+  "created": "2026-05-20",
+  "language": "Python 3.11",
+  "framework": "LangGraph + FastAPI + Streamlit",
+  "ai_tools": [
+    {
+      "name": "TRAE AI Assistant",
+      "usage": "全流程代码生成、调试、测试、文档撰写",
+      "collaboration_model": "人工决策架构 + AI 执行实现",
+      "scope": [
+        "Agent 模块开发 (collector/analyst/writer/qc)",
+        "LangGraph 编排层 (graph.py/router.py/state.py)",
+        "Pydantic Schema 设计与校验",
+        "FastAPI REST API 开发",
+        "Streamlit UI 设计（含深色主题）",
+        "单元测试编写 (15 cases)",
+        "技术文档撰写 (6 份)",
+        "Code Review 与 Bug 修复"
+      ]
+    }
+  ],
+  "model_provider": "Doubao-Seed-2.0-lite (课题专用)",
+  "version": "2.0.0"
+}

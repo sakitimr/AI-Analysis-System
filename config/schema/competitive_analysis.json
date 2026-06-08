@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CompetitiveAnalysisReport",
+  "type": "object",
+  "required": [
+    "meta",
+    "executive_summary",
+    "competitor_profiles",
+    "feature_matrix",
+    "pricing_comparison",
+    "user_sentiment",
+    "swot_analysis",
+    "conclusion",
+    "sources"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "generated_at": {
+          "type": "string"
+        },
+        "competitors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dimensions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "executive_summary": {
+      "type": "object",
+      "properties": {
+        "summary_text": {
+          "type": "string"
+        },
+        "key_findings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "competitor_profiles": {
+      "type": "array"
+    },
+    "feature_matrix": {
+      "type": "object"
+    },
+    "pricing_comparison": {
+      "type": "object"
+    },
+    "user_sentiment": {
+      "type": "object"
+    },
+    "swot_analysis": {
+      "type": "array"
+    },
+    "conclusion": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "recommendations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "url",
+          "title",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "url": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
